@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-        //for scroll or page change in viewpager
+        //for scroll or page change in viewpager if clicked
 
     }
 }
