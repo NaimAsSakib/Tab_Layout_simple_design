@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     TabLayout tabLayout;
     TabItem tabItem1, tabItem2, tabItem3;
     ViewPager viewPager;
-    PageAdapter pageAdapter;
+    PageAdapterTabLayout pageAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         tabItem3=findViewById(R.id.tabItem3);
         viewPager=findViewById(R.id.vPager);
 
-        pageAdapter=new PageAdapter(getSupportFragmentManager(),tabLayout.getTabCount());
+        pageAdapter=new PageAdapterTabLayout(getSupportFragmentManager(),tabLayout.getTabCount());
         viewPager.setAdapter(pageAdapter);
 
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
